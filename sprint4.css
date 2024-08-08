@@ -1,0 +1,63 @@
+/* Styles généraux */
+.testimonials-section {
+    padding: 50px 20px;
+    background-color: #f0f8ff; /* Couleur de fond douce et agréable */
+}
+
+.testimonial {
+    max-width: 80%; /* Augmenter la largeur des sections pour occuper 80% de la largeur de la page */
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff; /* Fond blanc pour les témoignages */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 80px; /* Taille de la police pour les citations doublée encore */
+    margin: 20px 0;
+    color: #444; /* Couleur du texte pour les citations légèrement plus claire */
+}
+
+p {
+    font-weight: bold;
+    font-size: 72px; /* Taille de la police pour les noms et positions doublée encore */
+    color: #666; /* Couleur du texte pour les noms légèrement plus claire */
+}
+
+/* Styles responsive */
+@media (max-width: 768px) {
+    .testimonial {
+        padding: 15px;
+    }
+
+    blockquote {
+        font-size: 64px; /* Réduction de la taille de la police pour les plus petits écrans */
+    }
+
+    p {
+        font-size: 56px; /* Réduction de la taille de la police pour les plus petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-section {
+        padding: 30px 10px;
+    }
+
+    .testimonial {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    blockquote {
+        font-size: 56px; /* Réduction supplémentaire de la taille de la police pour les très petits écrans */
+    }
+
+    p {
+        font-size: 48px; /* Réduction supplémentaire de la taille de la police pour les très petits écrans */
+    }
+}
