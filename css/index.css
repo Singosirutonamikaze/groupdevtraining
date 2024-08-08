@@ -1,0 +1,354 @@
+* {
+    margin: 0px auto;
+    padding: 0px auto;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center; 
+}
+
+h1 {
+    color: white;
+    padding-bottom: 0px;
+}
+
+.logo {
+    font-size: 30px;
+    float: left;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+ul {
+    float: right;
+    list-style: none;
+}
+
+li {
+    float: left;
+    padding: 20px;
+    font-size: 25px;
+    color: beige;
+    font-family: Arial;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0, 4s ease-in-out;
+}
+
+ul li a:hover {
+    color: blanchedalmond;
+}
+
+nav {
+    background-color: rgb(10, 10, 10);
+    height: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.Hero {
+    height: 500px;
+    background-image: url(background-image/fond_edited.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    height: 90vh;
+    margin: 0;
+    padding: 150px;
+}
+
+.titre {
+    font-size: 50px;
+    margin: 100px;
+    padding-top: 40px;
+}
+
+.ST {
+    color: white;
+    font-size: 30px;
+    margin: 100px;
+    padding-top: -30px;
+}
+
+.btn1 {
+    background-color: rgb(154, 159, 159);
+    border: 1 solid grey;
+    color: white;
+    padding: 20px;
+    margin-left: 100px;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 25px;
+    float: left;
+    border: 1px solid grey;
+    list-style: none;
+}
+
+.btn2 {
+    background-color: rgb(5, 6, 6);
+    border: 1 solid grey;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.btn1:hover {
+    color: blanchedalmond;
+}
+
+.btn2:hover {
+    color: blue;
+}
+
+
+.our-services {
+    margin-top: 100px;
+}
+
+.our-services h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 45px;
+    color: #013f82;
+}
+
+.container {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    text-align: center;
+    margin: 20px;
+    background-color: #fff;
+    padding: 30px 20px;
+    cursor: Pointer;
+    border: 1px solid #ddd;
+    transition: 0.4s ease;
+    animation: translate 3s ease-out;
+}
+
+.service:hover {
+    background-color: #f0f0f0;
+}
+
+.service i {
+    font-size: 48px;
+    /* color: #eb2636;*/
+    color: #666;
+}
+
+.service h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+}
+
+@media screen and (max-widht:768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/*Police style*/
+.italianno-regular {
+    font-family: "Italianno", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Styles généraux */
+.testimonials-section {
+    padding: 50px 20px;
+    background-color: #f0f8ff;
+    /* Couleur de fond douce et agréable */
+}
+
+.testimonial {
+    max-width: 80%;
+    /* Augmenter la largeur des sections pour occuper 80% de la largeur de la page */
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    /* Fond blanc pour les témoignages */
+    border-radius: 10px;
+    /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre */
+    animation: translate 3s ease-out;
+}
+
+@keyframes translate {
+    0% {
+        transform: translateY(-200px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 80px;
+    /* Taille de la police pour les citations doublée encore */
+    margin: 20px 0;
+    color: #444;
+    /* Couleur du texte pour les citations légèrement plus claire */
+}
+
+p {
+    font-weight: bold;
+    font-size: 72px;
+    /* Taille de la police pour les noms et positions doublée encore */
+    color: #666;
+    /* Couleur du texte pour les noms légèrement plus claire */
+}
+
+/* Styles responsive */
+@media (max-width: 768px) {
+    .testimonial {
+        padding: 15px;
+    }
+
+    blockquote {
+        font-size: 64px;
+        /* Réduction de la taille de la police pour les plus petits écrans */
+    }
+
+    p {
+        font-size: 56px;
+        /* Réduction de la taille de la police pour les plus petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-section {
+        padding: 30px 10px;
+    }
+
+    .testimonial {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    blockquote {
+        font-size: 56px;
+        /* Réduction supplémentaire de la taille de la police pour les très petits écrans */
+    }
+
+    p {
+        font-size: 48px;
+        /* Réduction supplémentaire de la taille de la police pour les très petits écrans */
+    }
+
+}
+
+/*Style du footer(Pied de page)*/
+footer {
+    width: 100vw;
+    background-color: #07040e;
+    position: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% auto;
+    padding: 0%;
+}
+
+/*Aplication d'un display a la div #contact*/
+#ContactContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2% 2%;
+}
+
+/*Style du titre de troisième taille*/
+h3 {
+    color: #ffffffd8;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    margin: 3% 0%;
+}
+
+/*Style de la div contenant les logos des liens*/
+.reseaulinK {
+    width: 45%;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3% 0%;
+}
+
+/*Style de la div contenant les mentions legals*/
+.mentionlegal p {
+    font-size: calc(25px - 3px);
+    text-align: center;
+    font-weight: 200;
+    color: #ffffffd2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+/*Style des logo des reseau sociaux*/
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/*Style des liens a*/
+.reseaulinK a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #c9f1fb57;
+    border: 2px solid #ffffffc3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f6f5f9ae;
+    margin: 1% 1%;
+}
+
+/*Style Appliquer à la div de class contact*/
+.contact {
+    display: flex;
+    float: right;
+    flex-direction: column;
+}
+
+/*Style Appliquer aux lien de class contact*/
+.contact a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fcfcfdb2;
+}
