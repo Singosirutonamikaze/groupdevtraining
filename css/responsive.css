@@ -1,0 +1,97 @@
+/* Pour les écrans moyens (tablettes, petits écrans) */
+@media screen and (max-width:840px) {
+    ul {
+        display: flex;
+        position: absolute;
+        top: 5%;
+        right: 0%;
+        height: 100vh;
+        flex-direction: column;
+        background-color: black;
+        display: none;
+    }
+
+    ul li{
+        margin: 2% 1%;
+        align-items: center;
+        justify-content: center;
+        height: 8vh;
+        text-align: right;
+        float: right;
+        width: 100%;
+        box-sizing: border-box;
+       
+    }
+
+    ul li:hover{
+        text-decoration: underline;
+        border-bottom: 1px solid #aaa;
+    }
+
+    .btn1{
+        border: none;
+        background-color: transparent;
+    }
+
+    #btn{
+        margin: 2% 1%;
+        align-items: center;
+        justify-content: center;
+        height: 8vh;
+        text-align: right;
+        float: right;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #btn:hover{
+        text-decoration: underline;
+        border-bottom: 1px solid #aaa;
+    }
+
+    .menu{
+        display: block;
+        float: right;
+        margin-top: 15px;
+        margin-right: 4px;
+        height: 30px;
+        width: 30px;
+        align-items: center;
+    }
+
+    .menu a i{
+        object-fit: contain;
+        height: 30px;
+        width: 30px;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 25px;
+    }
+    
+    nav{
+        height: 50px;
+    }
+
+    .Hero{
+        padding: 5% 0%;
+        height: 350px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

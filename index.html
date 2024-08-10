@@ -11,6 +11,11 @@
 
     <!--Lien vers les fichiers css-->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sprint4.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--Lien vers les icons-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!--Lien vers la police de caractères-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +26,16 @@
 </head>
 <!--Body de la page web-->
 <body>
+   <main>
     <nav>
         <h1 class="logo"><a href="index.html">TechSolutions</a></h1>
         <ul>
-         <li><a href="">Acceuil</a></li>
-         <li><a href="">Services</a></li>
-         <li><a href="">Contact</a></li>
-         <a href="contactez-nous.html"><button class="btn1">Contactez-nous</button></a>
+            <li><a href="">Acceuil</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <a href="contactez-nous.html" id="btn"><button class="btn1">Contactez-nous</button></a>
         </ul> 
+       <div class="menu"><a href="#"><i class="fa-sharp fa-solid fa-bars" style="width: 30px;height: 30px;aspect-ratio: 1/1;"></i></a></div> 
      </nav>
      <section>
          <div class="Hero">
@@ -38,6 +45,7 @@
          </div>
      </section>
      <section class="our-services">
+        <marquee><h2>Welcome into TechSolutions</h2></marquee>
         <h1>Our Services</h1>
         <div class="container">
             <div class="service">
@@ -66,25 +74,33 @@
     
     <section id="testimonials" class="testimonials-section">
         <div class="testimonial">
+            <img src="img/im1.jpeg" alt="Marie Dupont" class="testimonial-img">
+            <br><br><br><br><br>
             <blockquote>"Le service fourni par TechSolutions a été exceptionnel. Ils ont dépassé nos attentes."</blockquote>
             <p>- Marie Dupont, CEO</p>
         </div>
         <div class="testimonial">
+            <img src="img/im2.jpeg" alt="Pierre Martin" class="testimonial-img">
+            <br><br><br><br><br>
             <blockquote>"Une équipe professionnelle et réactive. Je recommande vivement TechSolutions."</blockquote>
             <p>- Pierre Martin, CTO</p>
         </div>
         <div class="testimonial">
+            <img src="img/im3.jpeg" alt="Sophie Lefèvre" class="testimonial-img">
+            <br><br><br><br><br>
             <blockquote>"TechSolutions a transformé notre manière de travailler grâce à leurs solutions innovantes."</blockquote>
             <p>- Sophie Lefèvre, Directrice Marketing</p>
         </div>
         <div class="testimonial">
+            <img src="img/im4.jpeg" alt="François Dubois" class="testimonial-img">
+            <br><br><br><br><br>
             <blockquote>"Un partenaire fiable et efficace pour tous vos besoins en IT. Nous sommes ravis."</blockquote>
             <p>- François Dubois, Responsable IT</p>
         </div>
     </section>
     
     <footer>
-        <h3>Contacter Nous</h3>
+        <h3>Contactez-Nous</h3>
         <div class="mentionlegal">
             <p>
                 TechSolutions est une entreprise de developpement web. <br>
@@ -121,5 +137,6 @@
             </div>
         </div>
     </footer>
+   </main>
 </body>
 </html>

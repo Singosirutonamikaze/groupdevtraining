@@ -6,6 +6,14 @@
     text-align: center; 
 }
 
+body{
+    overflow-x: hidden;
+}
+
+main{
+    margin: 0% 1px;
+}
+
 h1 {
     color: white;
     padding-bottom: 0px;
@@ -16,6 +24,7 @@ h1 {
     float: left;
     margin-top: 15px;
     border-radius: 12px;
+    margin-left:4px ;
 }
 
 ul {
@@ -62,25 +71,24 @@ a {
     background-attachment: scroll;
     height: 90vh;
     margin: 0;
-    padding: 150px;
+    padding: 150px 0px;
 }
 
 .titre {
-    font-size: 50px;
-    margin: 100px;
-    padding-top: 40px;
+    font-size:calc(50px - 15px);
+    margin: 2% 0%;
+    padding-top: 30px;
 }
 
 .ST {
     color: white;
-    font-size: 30px;
-    margin: 100px;
+    font-size: calc(30px - 5px);
+    margin: 5% 0%;
     padding-top: -30px;
 }
 
 .btn1 {
     background-color: rgb(154, 159, 159);
-    border: 1 solid grey;
     color: white;
     padding: 20px;
     margin-left: 100px;
@@ -96,7 +104,7 @@ a {
     background-color: rgb(5, 6, 6);
     border: 1 solid grey;
     color: white;
-    padding: 20px;
+    padding: calc(20px - 5px);
     align-items: center;
     justify-content: center;
     font-size: 20px;
@@ -107,19 +115,19 @@ a {
 }
 
 .btn2:hover {
-    color: blue;
+    color: rgba(0, 0, 255);
 }
 
 
 .our-services {
-    margin-top: 100px;
+    margin-top: 1%;
 }
 
 .our-services h1 {
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: calc(50px - 10px);
     text-align: center;
-    margin-bottom: 45px;
+    margin: 35px ;
     color: #013f82;
 }
 
@@ -163,7 +171,7 @@ a {
     line-height: 1.4;
 }
 
-@media screen and (max-widht:768px) {
+@media screen and (max-width:768px) {
     .container {
         flex-direction: column;
     }
@@ -176,106 +184,16 @@ a {
     font-style: normal;
 }
 
-/* Styles généraux */
-.testimonials-section {
-    padding: 50px 20px;
-    background-color: #f0f8ff;
-    /* Couleur de fond douce et agréable */
-}
-
-.testimonial {
-    max-width: 80%;
-    /* Augmenter la largeur des sections pour occuper 80% de la largeur de la page */
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #ffffff;
-    /* Fond blanc pour les témoignages */
-    border-radius: 10px;
-    /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Ombre */
-    animation: translate 3s ease-out;
-}
-
-@keyframes translate {
-    0% {
-        transform: translateY(-200px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-
-}
-
-blockquote {
-    font-style: italic;
-    font-size: 80px;
-    /* Taille de la police pour les citations doublée encore */
-    margin: 20px 0;
-    color: #444;
-    /* Couleur du texte pour les citations légèrement plus claire */
-}
-
-p {
-    font-weight: bold;
-    font-size: 72px;
-    /* Taille de la police pour les noms et positions doublée encore */
-    color: #666;
-    /* Couleur du texte pour les noms légèrement plus claire */
-}
-
-/* Styles responsive */
-@media (max-width: 768px) {
-    .testimonial {
-        padding: 15px;
-    }
-
-    blockquote {
-        font-size: 64px;
-        /* Réduction de la taille de la police pour les plus petits écrans */
-    }
-
-    p {
-        font-size: 56px;
-        /* Réduction de la taille de la police pour les plus petits écrans */
-    }
-}
-
-@media (max-width: 480px) {
-    .testimonials-section {
-        padding: 30px 10px;
-    }
-
-    .testimonial {
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-
-    blockquote {
-        font-size: 56px;
-        /* Réduction supplémentaire de la taille de la police pour les très petits écrans */
-    }
-
-    p {
-        font-size: 48px;
-        /* Réduction supplémentaire de la taille de la police pour les très petits écrans */
-    }
-
-}
-
 /*Style du footer(Pied de page)*/
 footer {
-    width: 100vw;
-    background-color: #07040e;
-    position: block;
+    width: 100%;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0% auto;
     padding: 0%;
+    margin-top: 3%;
 }
 
 /*Aplication d'un display a la div #contact*/
@@ -291,8 +209,8 @@ footer {
 
 /*Style du titre de troisième taille*/
 h3 {
-    color: #ffffffd8;
-    font-size: 30px;
+    color: #ffffffa9;
+    font-size: calc(35px - 5px);
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
     margin: 3% 0%;
@@ -301,7 +219,7 @@ h3 {
 /*Style de la div contenant les logos des liens*/
 .reseaulinK {
     width: 45%;
-    height: 175px;
+    height: 50px;
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -310,12 +228,16 @@ h3 {
 
 /*Style de la div contenant les mentions legals*/
 .mentionlegal p {
-    font-size: calc(25px - 3px);
+    font-size: calc(25px - 5px);
     text-align: center;
     font-weight: 200;
-    color: #ffffffd2;
+    color: #ffffff8d;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+}
+.mentionlegal p a{
+    color: #0173ac85;
+    text-decoration: underline;
 }
 
 /*Style des logo des reseau sociaux*/
@@ -327,16 +249,16 @@ img {
 
 /*Style des liens a*/
 .reseaulinK a {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    background: #c9f1fb57;
-    border: 2px solid #ffffffc3;
+    background:transparent;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #f6f5f9ae;
-    margin: 1% 1%;
+    color: #f6f5f981;
+    margin: 1% 3%;
 }
 
 /*Style Appliquer à la div de class contact*/
@@ -349,6 +271,23 @@ img {
 /*Style Appliquer aux lien de class contact*/
 .contact a {
     text-decoration: none;
-    font-size: 18px;
-    color: #fcfcfdb2;
+    font-size: calc(18px - 4px);
+    color: #fcfcfd83;
+}
+
+/*Style Appliquer au marquee*/
+marquee{
+    text-align: left;
+    margin-top: 2%;
+    width: 100%;
+}
+
+marquee h1{
+    font-size: 45px;
+    color: #07040e;
+    width: 100%;
+}
+
+.menu{
+    display: none;
 }
