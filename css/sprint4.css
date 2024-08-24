@@ -34,7 +34,7 @@
 
 /* Styles pour les citations */
 blockquote {
-    font-size: 40px; /* Taille de la police des citations */
+    font-size: 20px; /* Taille de la police des citations */
     margin-top: 120px; /* Ajuste en fonction de la taille de l'image */
     margin-bottom: 30px; /* Ajuste l'espace en dessous de la citation */
     line-height: 1.2; /* Ajuste la hauteur de ligne pour une meilleure lisibilité */
@@ -42,7 +42,7 @@ blockquote {
 
 /* Styles pour le texte des témoignages */
 p {
-    font-size: 30px; /* Taille de la police du texte des témoignages */
+    font-size: 20px; /* Taille de la police du texte des témoignages */
     font-style: italic;
     color: #555;
 }
